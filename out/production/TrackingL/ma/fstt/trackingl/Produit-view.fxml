@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="482.0" prefWidth="533.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label contentDisplay="RIGHT" prefHeight="28.0" prefWidth="661.0" text="les informations de produits:                     " textOverrun="WORD_ELLIPSIS">
+            <font>
+                <Font name="Tahoma Bold" size="22.0" />
+            </font>
+            <graphic>
+                <Button id="close" mnemonicParsing="false" style="-fx-background-color: red;" text="X" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="Tahoma Bold" size="13.0" />
+                    </font>
+                </Button>
+            </graphic>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin></Label>
+        <Label text="Libelle :">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+        <TextField fx:id="lib" />
+        <Label text="Prix unitaire:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+        <TextField fx:id="prix_uni" />
+        <Label text="Description :">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+        <TextField fx:id="desc" />
+        <AnchorPane prefHeight="48.0" prefWidth="506.0">
+            <children>
+
+
+                <Button fx:id="ok" layoutX="191.0" layoutY="-10.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: green;" text="save" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+        <TableView fx:id="protable" maxHeight="1.7976931348623157E308" prefHeight="123.0" prefWidth="494.0">
+            <columns>
+                <TableColumn fx:id="col_id_pro" prefWidth="51.20001411437988" text="id" />
+                <TableColumn fx:id="col_lib" prefWidth="129.79999542236328" text="libelle" />
+                <TableColumn fx:id="col_prix" prefWidth="123.0" text="prix unitaire" />
+                <TableColumn fx:id="col_desc" prefWidth="190.19998168945312" text="description" />
+
+
+            </columns>
+            <VBox.margin>
+                <Insets top="4.0" />
+            </VBox.margin>
+        </TableView>
+        <BorderPane prefHeight="26.0">
+            <left>
+                <Button mnemonicParsing="false" onMouseClicked="#RemovePro" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </left>
+            <right>
+                <Button graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#editPro" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: blue;" text="Edit" textFill="WHITE" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </children>
+
+
+
+
+</VBox>

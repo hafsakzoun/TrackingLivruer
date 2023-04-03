@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="482.0" prefWidth="533.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+   <children>
+      <TilePane prefHeight="86.0" prefWidth="534.0">
+         <children>
+            <Label prefHeight="78.0" prefWidth="494.0" text="Tracking Livreur" textFill="#2645d1">
+               <font>
+                  <Font name="Baskerville Old Face" size="64.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </TilePane>
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="534.0" style="-fx-font-size: 20;">
+         <menus>
+            <Menu fx:id="Lv" mnemonicParsing="false" style="-fx-font-size: ;" text="Livreur">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Produit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Commande">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+         </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow spread="0.33">
+               <color>
+                  <Color red="0.2856140434741974" green="0.42539182305336" blue="0.7789473533630371" />
+               </color>
+            </DropShadow>
+         </effect>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="120.0" />
+         </padding>
+      </MenuBar>
+   </children>
+</VBox>
